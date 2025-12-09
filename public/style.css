@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+}
+.main-content{
+    flex: 0 1 75%;
+    text-align: center;
+}
+
+#editor-panel {
+    flex: 1;
+}
+
+    #editor-panel h2 {
+        margin-top: 0;
+    }
+
+#editor {
+    width: 800px;
+    height: 600px;
+    border-radius: 8px;
+    border: 2px dashed #555;
+    position: relative;
+    background: #808080;
+    overflow: hidden;
+}
+
+/*Default class for block*/
+.block {
+    width: 100px;
+    height: 100px;
+    background: #070707;
+    position: absolute;
+}
+
+        .block.type-default{
+            width: 50px;
+            height: 50px;
+            background: #070707;
+            position: absolute;
+        }
+
+    .block.type-catapult {
+        width:50px;
+        height: 75px;
+        background: #00000000;
+        background-image: url("/images/catapult.png");
+        position: absolute;
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
+    .block.type-pig {
+        width: 100px;
+        height: 50px;
+        background: #00000000;
+        background-image: url("/images/pig.png");
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .block.type-ice {
+        width: 50px;
+        height: 50px;
+        background: #12f1f8
+    }
+
+    .block.type-wood {
+        width: 50px;
+        height: 50px;
+        background: #aa5900
+    }
+
+    .block.type-egg {
+        width: 50px;
+        height: 50px;
+        background: #00000000;
+        background-image: url("/images/egg.png");
+        position: absolute;
+        background-size: cover;
+    }
